@@ -6,7 +6,7 @@ namespace TaskPlannerWithoutMediator.Buttons
 {
     public sealed class DeleteButton : Button
     {
-        // Сильное сопряжение (очень)
+        // Сильное сопряжение 💩💩💩💩
         private TaskList _taskList;
         private Title _title;
         private Text _text;
@@ -15,6 +15,7 @@ namespace TaskPlannerWithoutMediator.Buttons
         public DeleteButton(TaskList taskList, Title title, Text text, SaveButton saveButton)
         {
             _taskList = taskList;
+            // сопряжение
             _taskList.SelectedIndexChanged += (_, _) => SelectNote();
             _title = title;
             _text = text;

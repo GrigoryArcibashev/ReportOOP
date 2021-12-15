@@ -6,7 +6,7 @@ namespace TaskPlannerWithoutMediator.Buttons
 {
     public sealed class SaveButton : Button
     {
-        // Сильное сопряжение
+        // Сильное сопряжение 💩💩💩
         private TaskList _taskList;
         private Title _title;
         private Text _text;
@@ -15,8 +15,10 @@ namespace TaskPlannerWithoutMediator.Buttons
         {
             _taskList = taskList;
             _title = title;
+            // сопряжение
             _title.TextChanged += (_, _) => UpdateDisplayOfSaveButton();
             _text = text;
+            // сопряжение
             _text.TextChanged += (_, _) => UpdateDisplayOfSaveButton();
             Text = "Save";
         }
