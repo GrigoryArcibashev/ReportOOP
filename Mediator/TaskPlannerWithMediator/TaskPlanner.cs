@@ -86,7 +86,6 @@ namespace Mediator
             _taskList.Delete();
             _title.Clear();
             _text.Clear();
-            _saveButton.Hide();
         }
     }
 }

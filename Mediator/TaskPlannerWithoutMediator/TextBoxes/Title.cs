@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace TaskPlannerWithoutMediator.TextBoxes
 {
@@ -14,11 +13,6 @@ namespace TaskPlannerWithoutMediator.TextBoxes
         public bool IsEmpty()
         {
             return Text == string.Empty;
-        }
-
-        protected override void OnTextChanged(EventArgs e)
-        {
-            base.OnTextChanged(e);
         }
     }
 }

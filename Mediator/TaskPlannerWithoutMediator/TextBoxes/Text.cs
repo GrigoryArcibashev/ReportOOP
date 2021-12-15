@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace TaskPlannerWithoutMediator.TextBoxes
 {
@@ -10,11 +9,6 @@ namespace TaskPlannerWithoutMediator.TextBoxes
             Multiline = true;
             WordWrap = true;
             ScrollBars = ScrollBars.Vertical;
-        }
-
-        protected override void OnTextChanged(EventArgs e)
-        {
-            base.OnTextChanged(e);
         }
     }
 }

@@ -35,17 +35,7 @@ namespace TaskPlannerWithoutMediator
                 Dock = DockStyle.Fill,
                 Font = new Font(FontFamily.GenericSerif, 16f)
             };
-            var addButton = new AddButton
-            {
-                Dock = DockStyle.Fill,
-                Font = new Font(FontFamily.GenericSerif, 16f)
-            };
-            var deleteButton = new DeleteButton
-            {
-                Dock = DockStyle.Fill,
-                Font = new Font(FontFamily.GenericSerif, 16f)
-            };
-            var saveButton = new SaveButton
+            var addButton = new AddButton(taskList)
             {
                 Dock = DockStyle.Fill,
                 Font = new Font(FontFamily.GenericSerif, 16f)
@@ -60,6 +50,19 @@ namespace TaskPlannerWithoutMediator
                 Dock = DockStyle.Fill,
                 Font = new Font(FontFamily.GenericSerif, 16f)
             };
+            var saveButton = new SaveButton(taskList, title, text)
+            {
+                Dock = DockStyle.Fill,
+                Font = new Font(FontFamily.GenericSerif, 16f)
+            };
+            var deleteButton = new DeleteButton(taskList, title, text, saveButton)
+            {
+                Dock = DockStyle.Fill,
+                Font = new Font(FontFamily.GenericSerif, 16f)
+            };
+            
+            saveButton.Hide();
+            deleteButton.Hide();
 
             #endregion
 

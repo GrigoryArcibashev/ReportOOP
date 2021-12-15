@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace TaskPlannerWithoutMediator
 {
@@ -39,11 +38,6 @@ namespace TaskPlannerWithoutMediator
         public bool IsEmpty()
         {
             return Items.Count == 0;
-        }
-
-        protected override void OnSelectedIndexChanged(EventArgs e)
-        {
-            base.OnSelectedIndexChanged(e);
         }
     }
 }
