@@ -7,7 +7,7 @@ namespace TaskPlannerWithoutMediator.Buttons
         public AddButton(TaskList taskList)
         {
             Text = "Add";
-            // Сопряжение 💩
+            // Сопряжение
             Click += (_, _) => taskList.Add(new Note());
         }
     }
