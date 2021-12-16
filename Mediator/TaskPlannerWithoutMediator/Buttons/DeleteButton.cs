@@ -23,6 +23,7 @@ namespace TaskPlannerWithoutMediator.Buttons
             Text = "Delete";
         }
 
+        // сопряжение
         protected override void OnClick(EventArgs e)
         {
             base.OnClick(e);

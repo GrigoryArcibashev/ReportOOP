@@ -52,7 +52,7 @@ namespace Mediator
         protected override void OnSelectedIndexChanged(EventArgs e)
         {
             base.OnSelectedIndexChanged(e);
-            _mediator.Notify(this, "Select");
+            _mediator.Notify(this);
         }
     }
 }

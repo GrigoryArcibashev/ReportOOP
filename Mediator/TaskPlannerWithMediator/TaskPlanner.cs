@@ -37,7 +37,7 @@ namespace Mediator
             }
         }
 
-        public void Notify(IComponent sender, string ev)
+        public void Notify(IComponent sender)
         {
             switch (sender)
             {

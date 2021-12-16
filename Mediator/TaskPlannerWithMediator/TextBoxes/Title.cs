@@ -27,7 +27,7 @@ namespace Mediator.TextBoxes
         protected override void OnTextChanged(EventArgs e)
         {
             base.OnTextChanged(e);
-            _mediator.Notify(this, "ChangeTitle");
+            _mediator.Notify(this);
         }
     }
 }

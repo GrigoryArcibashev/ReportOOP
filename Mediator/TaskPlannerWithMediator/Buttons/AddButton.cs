@@ -21,7 +21,7 @@ namespace Mediator.Buttons
         protected override void OnClick(EventArgs e)
         {
             base.OnClick(e);
-            _mediator.Notify(this, "AddNote");
+            _mediator.Notify(this);
         }
     }
 }

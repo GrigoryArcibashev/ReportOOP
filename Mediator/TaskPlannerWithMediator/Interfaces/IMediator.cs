@@ -2,6 +2,6 @@
 {
     public interface IMediator
     {
-        void Notify(IComponent sender, string ev);
+        void Notify(IComponent sender);
     }
 }
